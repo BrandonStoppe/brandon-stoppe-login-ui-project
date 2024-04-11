@@ -40,6 +40,7 @@ input {
 button {
     width: 100px;
     padding : 10px;
+    margin-bottom: 40px;
     background-color: rgb(5, 111, 177);
     color: white;
     border : none;
@@ -55,7 +56,8 @@ button:hover {
 }
 
 #sign-in {
-    font-size: 48px;
+    font-size: 50px;
+    text-transform: uppercase;
     color: black;
     padding: 50px;
 }
@@ -65,5 +67,5 @@ button:hover {
 }
 
 #password {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
