@@ -42,8 +42,6 @@ input {
     margin: 5px;
 }
 
-
-
 button {
     width: 200px;
     padding : 10px;
@@ -69,10 +67,6 @@ button:hover {
     color: rgb(0, 92, 148);
     padding: 50px;
     margin-top: 20px;
-}
-
-#username {
-
 }
 
 #password {
