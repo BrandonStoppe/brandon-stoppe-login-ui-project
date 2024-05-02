@@ -1,74 +1,68 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
     /* Back up color */
-    background-color: rgb(0, 92, 148);
-    background-image: url("blue-low-poly-background.svg");
+    background-color: white;
+    background-image: url("20007287_6229238.svg");
     background-size: cover;
+    background-position: center;
 }
 
 .container {
     height: 100vh;
     width: 100vw;
-   
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card {
+    min-height: 300px;
+    min-width: 400px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0.324);
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+
+    gap: 25px;
 }
 
-.login-box {
-    height: 60vh;
-    width: 30vw;
-    min-height: 280px;
-    min-width: 280px;
-    max-height: 425px;
-    max-width: 365px;
-    background-color: white;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    
-    border-radius: 20px;
-    box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0.324);
+.sign-in {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: rgb(62, 98, 82);
 }
 
 input {
-    width: 200px;
-    padding: 10px;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    margin: 5px;
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
 }
 
 button {
     width: 200px;
-    padding : 10px;
-    margin-bottom: 40px;
-    background-color: rgb(0, 92, 148);
+    height: 30px;
+    background-color: rgb(62, 98, 82);
     color: white;
     border : none;
-    border-radius: 5px;
+    border-radius: 30px;
     cursor: pointer;
-    margin-top: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-transform: uppercase;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.26);
-    margin-bottom: 70px;
 }
 
 button:hover {
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.551);
-}
-
-#sign-in {
-    font-size: 40px;
-    text-transform: uppercase;
-    color: rgb(0, 92, 148);
-    padding: 50px;
-    margin-top: 20px;
-}
-
-#password {
-    margin-bottom: 20px;
 }
