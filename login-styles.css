@@ -1,33 +1,30 @@
 body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
     /* Back up color */
     background-color: rgb(227, 222, 207);
     background-image: url("20007287_6229238.svg");
     background-size: cover;
     background-position: center;
-}
-
-.container {
-    height: 100vh;
-    width: 100vw;
-
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-
 .card {
-    min-height: 300px;
-    min-width: 400px;
+    min-height: 350px;
+    min-width: 200px;
+    height: 400px;
+    width: 375px;
     border: 2px solid rgb(166, 173, 170);
     background-color: transparent;
     backdrop-filter: blur(10px);
     border-radius: 20px;
     box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0.2);
-
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: sans-serif;
     font-weight: bold;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,37 +35,79 @@ body {
 
 .sign-in {
     font-size: 40px;
-    text-transform: uppercase;
     color: rgb(62, 98, 82);
 }
 
 .input-box {
     width: 300px;
-    height: 30px;
+    position: relative;
+    width: 250px;
+    height: 50px;
+    border-bottom: 2px solid rgb(62, 98, 82);
+
 }
 
-input {
+.input-box label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: rgb(62, 98, 82);
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+
+.input-box input {
     width: 100%;
     height: 100%;
+    background: transparent;
     border: none;
-    border-radius: 30px;
-    
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 14px;
-    text-align: center;
+    outline: none;
+    font-size: 1em;
+    color: rgb(62, 98, 82);
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 14px;    
 }
 
+.remember-forgot {
+    width: 300px;
+    font-size: .9em;
+    color: rgb(62, 98, 82);
+    font-weight: 500;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+ }
+ 
+ .remember-forgot label input {
+     accent-color: rgb(62, 98, 82);
+ }
+ 
+ .remember-forgot a {
+     color: rgb(62, 98, 82);
+     text-decoration: none;
+ }
+ 
+ .remember-forgot a:hover {
+     text-decoration: underline;
+ }
+
 button {
-    width: 200px;
-    height: 30px;
+    width: 250px;
+    height: 40px;
     background-color: rgb(62, 98, 82);
     border : none;
-    border-radius: 30px;
+    border-radius: 12px;
     cursor: pointer;
-    
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 14px;
-    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 16px;
     color: white;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.26);
 }
